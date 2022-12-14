@@ -31,15 +31,12 @@ const game = (() => {
         }
     }
 
-    const boardUi = () => {
-        squares.forEach((square, idx) => {
+    const boardUi = squares.forEach((square, idx) => {
             square.innerHTML = '';
             square.setAttribute('index', idx);
             square.addEventListener('click', playerMarksTile);     
             })
-    }
     
-    boardUi();
 
     const winningNumbers = [
         [0,1,2],
