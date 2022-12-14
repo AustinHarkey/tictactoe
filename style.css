@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+/* Simple reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f1f1f1;
+}
+
+.header__title {
+    font-size: 50px;
+}
+
+.main {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.main__player {
+    font-size: 32px;
+}
+
+.board {
+    border: 1px solid #aaa;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board__tile {
+    border: 1px solid #aaa;
+    width: calc(100% / 3);
+    position: relative;
+}
+
+.board__tile i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #555;
+}
+
+.oh {
+    font-size: 84px !important;
+}
+
+.board__tile:hover {
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+.main__reset {
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    padding: 14px 40px;
+    font-family: 'Hind', sans-serif;
+    font-size: 22px;
+    background-color: #e25a5a;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.main__reset:hover {
+    cursor: pointer;
+    background-color: #da0d0d;
+}
+
