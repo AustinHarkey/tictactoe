@@ -89,13 +89,7 @@ const gameCheck = (mark) => {
         return typeof item === "string";
       });
       
-      if (
-        checkForWin("x") === false &&
-        checkForWin("o") === false &&
-        result === true
-      ) {
-        text.textContent = 'Tie Game';
-      } else if (checkForWin("x") === true) {
+      if (checkForWin("x") === true) {
         console.log("x wins");
         text.textContent = 'X Wins!';
         boardWin();
@@ -103,6 +97,8 @@ const gameCheck = (mark) => {
         console.log("o wins");
         text.textContent = 'O Wins!';
         boardWin();
+      } else if(result === true){
+        text.textContent = 'Tie Game';
       }
 }
 
@@ -120,11 +116,6 @@ const gameCheck = (mark) => {
         boardUi
     }
 })();
-
-
-
-
-
 
 
 
